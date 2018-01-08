@@ -1,0 +1,770 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+
+<title>Enigma9.0-Registration</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+<!-- jQuery library -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- Latest compiled JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="regstyle.css" type="text/css"></script>
+
+
+
+
+<style>
+
+
+           .well
+
+            {
+
+             background-image: url(./img/reg-back.jpg);
+
+             background-repeat: no-repeat;
+
+             background-size: cover; 
+
+			 border: medium solid #44CB5B;
+
+			box-shadow: 5px 5px 5px #44cb5b;
+
+				
+
+            }
+
+	
+
+	
+
+	#overlay
+
+		{
+
+			margin:0;
+
+			padding:0;
+
+			top:0;
+
+			left:0;
+
+			z-index:100;
+
+			width:100%;
+
+			height:100%;
+
+			position:fixed;
+
+			display:block;
+
+			background:rgba(0,0,0,0.6);
+
+			background-attachment:fixed;
+
+			display:none;
+
+		}
+
+</style>
+ 
+</head>
+
+
+
+<body>
+
+                      <div id="overlay">
+
+    				<h1 id="register">Registering...</h1>
+
+    					</div>
+
+                     <div class="container">
+
+                     	<div class="well well-lg" >
+
+                     	<!------Logo------------>
+
+						<div class="row">
+
+						<div class="col-sm-6  logo-college">
+
+						<br>
+
+							<img src="img/logo-ugi.png">
+
+						</div>
+
+						<div class="col-sm-6 logo-enigma">
+
+							<img src="img/logo-2.png">
+
+						</div>
+
+						</div>
+
+						<!---------Logo End-------->
+
+
+
+                      <div class="card-header"><strong ><center>Fill the form below to Register</center></strong></div>
+
+
+
+                      <form method="POST" action="">
+
+						  <div id="msg" style="display:none;" >Field Marked With * are required</div>
+
+							  <div class="form-row">
+
+							<div class="form-group col-md-9 col-sm-9 col-xs-12 required md-input-wrapper">
+
+							<label for="name" class="col-form-label"><strong> Name</strong></label>
+
+							<input type="text" class="form-control md-input" id="name" name="name" placeholder=" Name">
+							<span class="md-input-bar"></span>
+
+							</div>
+
+								<div class="form-group col-md-3 col-sm-3 col-xs-12 md-input-wrapper">
+
+								  <label for="college_id" class="col-form-label"><strong>College ID</strong></label>
+
+						         <input type="text" class="form-control md-input" id="id" name="college_id" placeholder="College Id">
+									<span class="md-input-bar"></span>
+								 </div>
+
+								
+
+							  <div class="form-group col-md-4 col-sm-4 col-xs-12 md-input-wrapper">
+
+								<label for="college_name" class="col-form-label "><strong>College Name</strong></label>
+
+								<input type="text" class="form-control md-input" id="college" name="college_name"placeholder="College">
+								<span class="md-input-bar"></span>
+
+							 </div>
+
+								
+
+								<div class="form-group col-md-4 col-sm-4 col-xs-12 md-input-wrapper">
+
+								<label for="branch" class="col-form-label"><strong>Branch</strong></label>
+
+								<input type="text" class="form-control md-input" id="branch" name="branch"placeholder="Branch">
+								<span class="md-input-bar"></span>
+
+								</div>
+
+							      
+
+							      <div class="form-group col-md-4 col-sm-4 col-xs-12">
+
+								  <label for="year" class="col-form-label"><strong>Year</strong></label>
+
+								  <select class="form-control" id="year" name="year"placeholder="year">
+
+								  <option value="1">1</option>
+
+								  <option value="2">2</option>
+
+								  <option value="3">3</option>
+
+								  <option value="4">4</option>
+
+								  </select>
+
+								</div>							
+
+							
+
+							   <div class="form-group col-md-4 col-sm-4 col-xs-12 required md-input-wrapper">
+
+								<label for="contact_number" class="col-form-label"><strong>Contact Number</strong></label>
+
+								<input type="tel" maxlength="10" class="form-control md-input" id="phone" name="contact_number" placeholder="Phone Number" >
+								<span class="md-input-bar"></span>
+							  </div>
+
+							  
+
+				
+
+								<div class="form-group col-md-5 col-sm-5 col-xs-12 md-input-wrapper">
+
+								  <label for="inputZip" class="col-form-label"><strong>Email</strong></label>
+
+								  <input type="email" class="form-control md-input" id="email" name="email" placeholder="Email Id">
+								  <span class="md-input-bar"></span>
+
+								</div>
+
+							  </div>
+
+
+
+							   <div class="col-md-12 col-sm-12 col-xs-12">
+
+							  <h2><strong ><center>EVENTS</center></strong></h2>
+
+				          	  <h4><center><strong><span>(Select Any Four Events)</span></strong></center></h4><br>
+
+					          </div>
+
+
+
+							   <div class="row">
+
+							<div class=" col-md-3 col-sm-3 col-xs-12 icheckbox_md ">
+
+						    <label class="f-container ">MEGASTRUCTURE
+
+							<input  type="checkbox"  id="event"    data-md-icheck="" value="MEGASTRUCTURE"  id="megastructure" >
+							  
+
+							  <span class="checkmark"></span>
+
+								</label>
+
+							</div>
+
+					  	
+
+						  	<div class=" col-md-3 col-sm-3 col-xs-12 icheckbox_md " >
+
+								<label class="f-container" style="margin-left: 10px;">JUNKYARD
+
+								  <input  type="checkbox"    data-md-icheck=""  value="JUNKYARD" id="junkyard" >
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+							</div>
+
+					  		<div class="form-group col-md-3 col-sm-3 col-xs-12 icheckbox_md">
+
+						  	<label class="f-container">PRASTUTI
+
+								  <input  type="checkbox"     data-md-icheck=""  value="PRASTUTI" id="prastuti" >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+						  	<div class="form-group col-md-3 col-sm-3 col-xs-12 icheckbox_md" id="AD-MANIAC">
+
+						  	<label class="f-container">AD-MANIAC
+
+								  <input  type="checkbox"     data-md-icheck="" value="AD-MANIAC" id="admaniac"  >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+					  	
+
+					  		
+
+						  	
+
+						  </div>
+
+						  
+
+						  <div class="row">
+
+							<div class="form-group col-md-3 col-sm-3 col-xs-12 icheckbox_md">
+
+						    <label class="f-container">TREASUREHUNT
+
+							  <input  type="checkbox"     data-md-icheck=""  value="TREASUREHUNT" name="treasurehunt" id="treasurehunt" >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+					  	
+
+						  	<div class="form-group col-md-3 col-sm-3 col-xs-12 icheckbox_md " >
+
+								<label class="f-container" style="margin-left: 10px;">MOCK-A-DRILL
+
+								  <input  type="checkbox"     data-md-icheck=""   value="MOCK-A-DRILL" id="mockadrill">
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+							</div>
+
+					  		<div class="form-group col-md-3 col-sm-3 col-xs-12 icheckbox_md">
+
+						  	<label class="f-container">RUSTIES
+
+								  <input  type="checkbox"     data-md-icheck="" value="RUSTIES" id="rusties"  >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+						  	<div class="form-group col-md-3 col-sm-3 col-xs-12 icheckbox_md">
+
+						  	<label class="f-container">OKI-DOKII@FB
+
+								  <input  type="checkbox"     data-md-icheck="" value="OKI-DOKII@FB" id="okodoki"  >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+							
+
+							 <div class="row">
+
+							<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md">
+
+					    	<h3 style="margin-left: 14px; text-decoration: underline" ><strong> TRIGGER THE BIGGER</strong></h3>
+
+						    <label class="f-container" style="margin-left: 14px;">BATTLE OF BREADBORD
+
+							  <input  type="checkbox"     data-md-icheck="" value="breadboard" id="BATTLE OF BREADBORD" >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">BOTTLEROCKET
+
+							  <input  type="checkbox"     data-md-icheck=""  value="BOTTLEROCKET" id="bottlerocket">
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">IOT
+
+							  <input  type="checkbox"     data-md-icheck="" value="IOT" id="iot">
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+					  	
+
+						  	<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md " >
+
+						  	<h3 style="margin-left: 14px; text-decoration: underline" ><strong> JASHAN-E-RAAG</strong></h3>
+
+								<label class="f-container" style="margin-left: 17px;">ENIGMA IDOL
+
+							<input  type="checkbox"     data-md-icheck="" value="ENIGMA IDOL"  id="enigmaidol" >
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+								<label class="f-container" style="margin-left: 17px;">ACOUSTIC
+
+								  <input  type="checkbox"     data-md-icheck="" value="ACOUSTIC" id="acoustic">
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+							</div>
+
+					  		<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md">
+
+					  		<h3 style="margin-left: 14px; text-decoration: underline" ><strong> CONQUERORS</strong></h3>
+
+						  	<label class="f-container">MINIMILITIA
+
+								  <input  type="checkbox"     data-md-icheck="" value="MINIMILITIA" id="minimilitia">
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container">NFS
+
+								  <input  type="checkbox"     data-md-icheck="" value="NFS" id="nfs">
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container">Counter Strike
+
+								  <input  type="checkbox"     data-md-icheck="" value="Counter Strike" id="cs" >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							</div>							
+
+							</div>
+
+						  
+
+							<div class="row">
+
+							<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md">
+
+					    	<h3 style="margin-left: 14px; text-decoration: underline" ><strong> TECH-TALES</strong></h3>
+
+						    <label class="f-container" style="margin-left: 14px;">CODEX
+
+							  <input  type="checkbox"     data-md-icheck="" value="CODEX" id="codex" >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">CODE HUNT
+
+							  <input  type="checkbox"     data-md-icheck="" value="CODE HUNT" id="codehunt" >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+					  	
+
+						  	<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md" >
+
+						  	<h3 style="margin-left: 14px; text-decoration: underline" ><strong> ROBO LIGA</strong></h3>
+
+								<label class="f-container" style="margin-left: 17px;">HURDLE MANIA
+
+								  <input  type="checkbox"     data-md-icheck="" value="HURDLE MANIA" id="hurdlemania" >
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+								<label class="f-container" style="margin-left: 17px;">MAZE RUNNER
+
+								  <input  type="checkbox"     data-md-icheck="" value="MAZE RUNNER" id="mazerunner" >
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+							</div> 
+
+					  		<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md ">
+
+					  		<h3 style="margin-left: 14px; text-decoration: underline" ><strong> BOOGIE-WOOGIE</strong></h3>
+
+						  	<label class="f-container">STEP-UP
+
+								  <input  type="checkbox"     data-md-icheck="" value="STEP-UP" id="boogie" >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container">BATTLE ON BEATS
+
+								  <input  type="checkbox"     data-md-icheck="" value="BATTLE ON BEATS" id="bob" >
+
+								  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+							</div>
+
+					  	
+
+					  		<div class="row">
+
+							<div class="form-group col-md-8 col-sm-8 col-xs-12 icheckbox_md">
+
+					    	<h3 style="margin-left:14px; text-decoration: underline" ><strong> PROFILIC ZONE</strong></h3>
+
+					    	<div class="row">
+
+					    	<div class="form-group col-md-6 col-sm-6 col-xs-12">
+
+					    	<label class="f-container" style="margin-left: 14px;">T-SHIRTPAINTING
+
+							  <input  type="checkbox"     data-md-icheck="" value="T-SHIRTPAINTING" id="tshirt"  >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">TATTOO MAKING
+
+							  <input  type="checkbox"     data-md-icheck="" value="TATTOO MAKING" id="tatto" >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">MEHNDI
+
+							  <input  type="checkbox"     data-md-icheck="" value="MEHNDI" id="mehendi"  >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+				    	   <div class="form-group col-md-6 col-sm-6 col-xs-12">				     
+
+					    	<label class="f-container" style="margin-left: 14px;">FACEPAINTING
+
+							  <input  type="checkbox"     data-md-icheck=""  value="FACEPAINTING" id="face">
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">RANGOLI
+
+							  <input  type="checkbox"     data-md-icheck="" value="RANGOLI" id="rangoli"  >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							<label class="f-container" style="margin-left: 14px;">SNAP-SHOT
+
+							  <input  type="checkbox"     data-md-icheck=""  value="SNAP-SHOT" id="snap" >
+
+							  <span class="checkmark"></span>
+
+							</label>
+
+							</div>
+
+							</div>
+
+							</div>
+
+						  	<div class="form-group col-md-4 col-sm-4 col-xs-12 icheckbox_md" style="padding-top: 60px;" >
+
+						  		<label class="f-container" style="margin-left: 17px;">STAND-UPCOMEDY
+
+								  <input  type="checkbox"     data-md-icheck="" value="STAND-UPCOMEDY" id="standup" >
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+								<label class="f-container" style="margin-left: 17px;">BE AN ENTREPRENEUR
+
+								  <input  type="checkbox"     data-md-icheck="" value="BE AN ENTREPRENEUR" id="bae" >
+
+								  <span class="checkmark"></span>
+
+								</label>
+
+							</div>
+
+							</div>
+
+					  	
+
+					  	
+
+						  	
+
+						 </div>
+
+							  
+
+					<button class="btn btn-success md-btn" id="sb-btn"name="submit">Register</button>
+
+
+
+							 </form> 
+
+
+
+							 <br>
+
+			<strong>#Note: All the participants who are registering here has to deposit an amount of Rs. 250 for their registration to complete on UGI help desk.</strong>
+
+		</div>
+</body>
+
+
+    <script>
+		var checked=0;
+		$(document).ready(function(e) {
+				$(".md-input").each(function(index, element) {
+                    if(!$(this).val()=="")
+					{
+						$(this).parent().addClass("md-input-filled");
+					}
+					else
+					{
+						$(this).parent().removeClass("md-input-filled");
+					}
+                });
+				
+				$(".md-input").focus(function(e) {
+					$(this).parent().addClass("md-input-focus");
+                });
+				
+				$(".md-input").focusout(function(e) {
+                    $(this).parent().removeClass("md-input-focus");
+					if(!$(this).val()=="")
+					{
+						$(this).parent().addClass("md-input-filled");
+					}
+					else
+					{
+						$(this).parent().removeClass("md-input-filled");
+					}
+                });
+		});
+				$(document).ready(function(){
+						$("input[type='checkbox']").change(function(){
+						var maxAllowed=4;
+									  checked=$("input[type='checkbox']:checked").length;
+										if(checked>maxAllowed){
+											$(this).prop("checked","");
+											alert("You can select maximum 4 Events");
+										}
+											
+									  });
+				
+				$(".md-btn").click(function(e) {
+                    e.preventDefault();
+					if(checked==0)
+					{
+						alert("Please select an event");
+					}
+					else
+					{
+						var ans=confirm("You have selected "+checked+" events.Wanna Continue???")	
+						if(ans)
+						{
+							var a=1;
+							$(".md-input").each(function(index, element) {
+                                if($(this).val()=="")
+								{
+									a=0;
+								}
+                            });
+							if(a==0)
+							{
+								alert("Please fill all the Fields.");
+							}
+							else
+							{
+								//Register
+								var name=$("#name").val();
+								name=name.replace(' ','%20');
+								var id=$("#id").val();
+								id=id.replace(' ','%20');
+								var college=$("#college").val();
+								college=college.replace(' ','%20');
+								var branch=$("#branch").val();
+								branch=branch.replace(' ','%20');
+								var phone=$("#phone").val();
+								phone=phone.replace(' ','%20');
+								var email=$("#email").val();
+								email=email.replace(' ','%20');
+								var year=$("#year").val();
+								
+								
+								var event = new Array();
+								$("input:checked").each(function() {
+								   event.push($(this).val());
+								});
+								
+								$("#overlay").css("display","block");
+								
+								$.ajax({  
+								type: "POST",  
+								url: "addDB.php",  
+								data:"name="+name+"&id="+id+"&college="+college+"&branch="+branch+"&year="+year+"&phone="+phone+"&email="+email+"&event="+event, 
+								success:function(msg){ 
+									$("#overlay").css("display","none"); 
+									if(msg=='error')
+									{
+										alert("Some error occurred");
+									}
+									else if(msg=='exists')
+									{
+										alert("This email id is already registered.");
+									}
+									else if(msg=='done')
+									{
+										alert("Registration Successfull");
+										/*$(".md-input").each(function(index, element) {
+											$(this).val("");
+											$(this).parent().removeClass("md-input-filled");
+										});
+										
+										$(".icheckbox_md").each(function(index, element) {
+                                            $(this).removeClass("checked");
+                                        });*/
+										
+									}
+									else
+									{
+										alert("Some another error occurred");
+									}
+								}
+								
+								});
+							}
+						}
+					}
+					
+                });
+				
+			});
+	</script>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,145 @@
+@media (max-width:460px)
+{
+	.logo-enigma img
+	{
+		width:350px;
+		height: 145px;
+		float: right;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		padding-left: 10px;
+		right: -15px;
+		position: relative;
+	}
+	
+		
+.logo-college img
+	{
+		padding-top: 10px;
+		width:175px;
+		height: 55px;
+		position: relative;
+		left: 20%;
+	}
+
+}
+
+
+.logo-enigma img
+	{
+		width:350px;
+		height: 145px;
+		float: right;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		padding-left: 10px;
+		right: -15px;
+		position: relative;
+	}
+.logo-college img
+	{
+		padding-top: 10px;
+		width:175px;
+		height: 55px;
+		float: left;
+		
+	}
+	.forms
+	{
+		background-image: url(img/reg-back.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		width: 1050px;
+		margin-right: -60px;
+	}
+	.clearfix
+	{
+		height: 100px;
+		
+	}
+	.card
+	{
+		width:1000px;
+		left: 5%;
+		position: relative;
+	}
+	#sb-btn
+	{
+		margin-top: 25px;
+		width: 150px;
+		height: 50px;
+		left: 45%;
+		position: relative;
+		background-color: rgb(0,128,0);
+	}
+	/* The f-container */
+.f-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.f-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:rgb(0,128,0);
+}
+
+/* On mouse-over, add a grey background color */
+.f-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.f-container input:checked ~ .checkmark {
+    background-color:#44CB5B;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.f-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.f-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+		}
+
+
+
+
+
